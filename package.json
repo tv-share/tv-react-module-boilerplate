@@ -1,11 +1,11 @@
 {
-  "name": "tv-buttons",
+  "name": "tv-react-module-boilerplate",
   "version": "1.0.0",
-  "description": "A collection of buttons for theVelops' projects",
+  "description": "A boilerplate for building react modules",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rm -r ./dev/build/* && nodemon --watch src/**/*.js --watch src/**/*.styl --watch src --ignore dev/ --exec \"gulp css && parcel ./dev/index.html -d ./dev/build -p 8888\"",
+    "dev": "nodemon --watch src/**/*.js --watch src/**/*.styl --watch src --ignore dev/ --exec \"gulp css && parcel ./dev/index.html -d ./dev/build -p 8888\"",
     "build": "gulp build"
   },
   "author": "theVelops <contato@thevelops.com> (http://www.thevelops.com)",
@@ -50,5 +50,13 @@
     "watchify": "^3.10.0",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tv-share/tv-react-module-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tv-share/tv-react-module-boilerplate/issues"
+  },
+  "homepage": "https://github.com/tv-share/tv-react-module-boilerplate#readme"
 }
