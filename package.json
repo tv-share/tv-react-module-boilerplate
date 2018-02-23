@@ -24,7 +24,8 @@
     "gulp-eslint": "^4.0.2",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify": "^3.0.0",
-    "pump": "^3.0.0"
+    "pump": "^3.0.0",
+    "react-dom": "^16.2.0"
   },
   "repository": {
     "type": "git",
