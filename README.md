@@ -38,6 +38,6 @@ The project has the following structure:
 #       example.styl
 #   index.js
 ```
-The React classes you go in the **lib** directory and the stylus in the **style**, allways following the file name pattern. All React class must also be exported in **src/index.js**.
+The React classes go in the **lib/** directory and the stylus in the **style/**, allways following the file name pattern. All React class must also be exported in **src/index.js**.
 
 Also, for usability test, you can edit the **dev/workbench.js** file to pass props to your component and test its behavior.
