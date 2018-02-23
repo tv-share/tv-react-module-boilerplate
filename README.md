@@ -16,8 +16,10 @@ To start building your module just follow these steps:
 git clone https://github.com/tv-share/tv-react-module-boilerplate.git <package_name>
 cd <package_name>
 
-# install dependencies
+# install global dependencies
 npm install -g parcel-bundler nodemon gulp
+
+# install local dependencies
 npm install
 
 # start dev server
