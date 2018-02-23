@@ -1,6 +1,7 @@
 # tv-react-module-boilerplate
 
 * [How this repo works](#how-this-repo-works)
+* [Development](#development)
 
 ## How this repo works
 This is a boilerplate project for building React modules and publishing to [npmjs](https://www.npmjs.com).
@@ -15,7 +16,7 @@ git clone https://github.com/tv-share/tv-react-module-boilerplate.git <package_n
 cd <package_name>
 
 # install global dependencies
-npm install -g parcel-bundler nodemon gulp
+npm install -g parcel-bundler nodemon
 
 # install local dependencies
 npm install
@@ -24,3 +25,19 @@ npm install
 npm run dev
 ```
 
+All modules should follow the following the module development guidelines
+
+## Development
+The project has the following structure:
+
+```bash
+# | src
+#   | lib
+#       Example.js
+#   | style
+#       example.styl
+#   index.js
+```
+The React classes you go in the **lib** directory and the stylus in the **style**, allways following the file name pattern. All React class must also be exported in **src/index.js**.
+
+Also, for usability test, you can edit the **dev/workbench.js** file to pass props to your component and test its behavior.
