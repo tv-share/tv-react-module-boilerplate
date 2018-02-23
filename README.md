@@ -1,7 +1,5 @@
 # tv-react-module-boilerplate
 
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-
 * [How this repo works](#how-this-repo-works)
 
 ## How this repo works
