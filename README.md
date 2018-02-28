@@ -33,7 +33,7 @@ npm run dev
 
 All modules should follow the following the module development guidelines
 
-## Development
+## Development - Existing Module
 The project has the following structure:
 
 ```bash
