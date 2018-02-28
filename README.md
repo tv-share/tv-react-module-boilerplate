@@ -54,10 +54,11 @@ The testing library we will be using will be [jest](https://facebook.github.io/j
 must come with the respective unit test.
 
 #### jest TL;DR
-When running a snapshot test, the first time you run it, jest will create a .snap file in the test/\_\_snapshots\_\_ directory that represent the snapshot of that component. It's yout job as a developer to evaluate if the snapshot created makes sense. 
+When running a snapshot test, the first time you run it, jest will create a .snap file in the test/\_\_snapshots\_\_ directory that represents the snapshot of that component. It's yout job as a developer to evaluate if the snapshot created makes sense. 
 
-e.g.: Take this bugged stateless component Example.js:
+e.g.: Take this bugged stateless component Example.js and its test:
 ```javascript
+// Example.js
 const Example = (props) => {
 	const { className, label, onClick } = props;
 
@@ -67,6 +68,19 @@ const Example = (props) => {
 		</button>
 	);
 };
+
+// Example.test.js
+it('renders correctely', () => {
+    const component = renderer.create(
+        <Example
+            label="Example"
+            className="example-btn"
+            onClick={() => {})}
+        />
+    );
+    
+    expect(component.toJSON()).toMatchSnapshot();
+});
 ```
 When running the snapshot test the first time, it will always pass, since there is no previous snapshot to compare:
 ```bash
