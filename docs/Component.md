@@ -1,7 +1,7 @@
 # Component Development
 
 * [Guidelines](#guidelines)
-* [Tests](#testing)
+* [Tests](#tests)
 * [Docs](#docs)
 
 To start building new components or component improvements for a existing module follow these steps:
