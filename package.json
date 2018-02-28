@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch src/**/*.js --watch src/**/*.styl --watch src --ignore dev/ --exec \"gulp css && parcel ./dev/index.html -d ./dev/build -p 8888\"",
+    "dev": "gulp watch",
+    "dev:fix": "gulp watch:fix",
     "build": "gulp build"
   },
   "author": "theVelops <contato@thevelops.com> (http://www.thevelops.com)",
@@ -26,6 +27,7 @@
     "gulp-clean-dest": "^0.2.0",
     "gulp-concat-css": "^3.0.0",
     "gulp-eslint": "^4.0.2",
+    "gulp-parcel": "^0.3.5",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify": "^3.0.0",
     "pump": "^3.0.0",

@@ -2,3 +2,4 @@ dev/
 src/
 .cache/
 dev/build
+.vscode

@@ -16,7 +16,7 @@ git clone https://github.com/tv-share/tv-react-module-boilerplate.git <package_n
 cd <package_name>
 
 # install global dependencies
-npm install -g parcel-bundler nodemon
+npm install -g parcel-bundler
 
 # install local dependencies
 npm install
