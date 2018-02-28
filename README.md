@@ -173,7 +173,7 @@ exports[`renders correctely 1`] = `
 Now that looks right!
 
 Just one **point of attention** when updating snapshots, a jest documentation puts it:
->This _(jest tests/ --updateSnapshot)_ will re-generate snapshot artifacts for all failing snapshot tests. **If we had any additional failing snapshot tests due to an unintentional bug, we would need to fix the bug before re-generating snapshots to avoid recording snapshots of the buggy behavior**.
+>This _[jest tests/ --updateSnapshot]_ will re-generate snapshot artifacts for all failing snapshot tests. **If we had any additional failing snapshot tests due to an unintentional bug, we would need to fix the bug before re-generating snapshots to avoid recording snapshots of the buggy behavior**.
 
 
 [Here](./tests/) in this boilerplate you can find a full example of a snapshot test and the respective .snap file created for our Example.js component.
