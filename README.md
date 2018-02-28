@@ -68,7 +68,7 @@ npm run test:update
 
 **Always test your code before creating a pull request. Pull requests without tests or with failing tests will not be merged.**
 
-#### jest TL;DR
+#### jest TL;DR version
 When running a snapshot test, the first time you run it, jest will create a .snap file in the **tests/\_\_snapshots\_\_** directory that represents the snapshot of that component. It's yout job as a developer to evaluate if the snapshot created makes sense. 
 
 e.g.: Take this bugged stateless component Example.js and its test:
