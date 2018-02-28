@@ -14,25 +14,6 @@ This boilerplate comes with a develop environment set up with [parceljs](https:/
 
 Here you can find instructions and guidelines for building components for existing modules or to create your new module from scratch.
 
-To start building your module just follow these steps:
-
-```bash
-# clone the repo
-git clone https://github.com/tv-share/tv-react-module-boilerplate.git <package_name>
-cd <package_name>
-
-# install global dependencies
-npm install -g parcel-bundler
-
-# install local dependencies
-npm install
-
-# start dev server
-npm run dev
-```
-
-All modules should follow the following the module development guidelines
-
 ## Component Development
 To start building new components or component improvements for a existing module follow these steps:
 
