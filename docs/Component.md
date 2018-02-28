@@ -185,7 +185,7 @@ _short description_
 --- | :---: | ---
 <field_name> | <field_type> | <short_description>
 
-Note that _Description_ is required only for non-trivial props, expect for required fields. Required field must always come at least with a _required_ flag in the description. Also, the list must be alphabetically ordered with required fields first.
+Note that _Description_ is required only for non-trivial props, expect for required fields. Required field must always come at least with a _required_ flag in the description. Also, the list must be ordered alphabetically with required fields first.
 
 Here is a example from the Example component in this boilerplate:
 
