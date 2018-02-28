@@ -178,8 +178,9 @@ These are all the information you should include in your docs:
 
 - Component Name
 __short description__
+
 **Field** | **Type** | **Description**
---- | --- | ----
+--- | --- | ---
 field_name | field_type | (optional) short_description
 
 
