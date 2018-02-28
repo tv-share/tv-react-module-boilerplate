@@ -2,9 +2,9 @@
 
 * [How this repo works](#how-this-repo-works)
 * [Component Development](./docs/Component.md)
-    * [Guidelines](#guidelines)
-    * [Tests](#testing)
-    * [Docs](#docs)
+    * [Guidelines](./docs/Component.md#guidelines)
+    * [Tests](./docs/Component.md#testing)
+    * [Docs](./docs/Component.md#docs)
 * [Module Development](./docs/Module.md)
 
 ## How this repo works
