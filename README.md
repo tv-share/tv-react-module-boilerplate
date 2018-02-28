@@ -67,7 +67,7 @@ npm run test:update
 ```
 
 #### jest TL;DR
-When running a snapshot test, the first time you run it, jest will create a .snap file in the test/\_\_snapshots\_\_ directory that represents the snapshot of that component. It's yout job as a developer to evaluate if the snapshot created makes sense. 
+When running a snapshot test, the first time you run it, jest will create a .snap file in the **tests/\_\_snapshots\_\_** directory that represents the snapshot of that component. It's yout job as a developer to evaluate if the snapshot created makes sense. 
 
 e.g.: Take this bugged stateless component Example.js and its test:
 ```javascript
@@ -97,7 +97,7 @@ it('renders correctely', () => {
 ```
 When running the snapshot test the first time, it will always pass, since there is no previous snapshot to compare:
 ```bash
-> jest tests/
+> npm test
 
  PASS  tests/Example.test.js
   ✓ renders correctely (15ms)
@@ -108,7 +108,7 @@ Snapshots:   1 passed, 1 total
 Time:        0.893s, estimated 1s
 Ran all test suites matching /tests\//i.
 ```
-But now let's take a loot at the generated Example.test.js.snap:
+Now let's take a loot at the generated **Example.test.js.snap**:
 ```javascript
 exports[`renders correctely 1`] = `
 <button
@@ -119,7 +119,7 @@ exports[`renders correctely 1`] = `
 </button>
 `;
 ```
-One can take a look at this and already see the error. There was a spacing missing in the `className` prop. So it's our job, to go and fix the bug. Running `npm test` again we get:
+One can take a look at this and already see the error. There was a spacing missing in the `className` prop. So it's your job to go and fix the bug. Running `npm test` again we get:
 ```bash
  FAIL  tests/Example.test.js
   ✕ renders correctely (22ms)
@@ -141,7 +141,7 @@ One can take a look at this and already see the error. There was a spacing missi
         Label
       </button>
 ```
-As expected, it fails. That's because now our component doesn't match our snapshot anymore. So we have to update our snapshot to match our new working component. To do that simply run:
+As expected, it fails. That's because now our component doesn't match our snapshot anymore. We have to update the snapshot to match our new working component. To do that simply run:
 
 ```
 > npm run test:update
@@ -159,7 +159,7 @@ Snapshots:   1 updated, 1 total
 Time:        0.908s, estimated 1s
 Ran all test suites matching /tests\//i.
 ```
-And that's it. Our snapshot have been updated and now we have the snapshot of the working component. You might want to take a look one more time at the .snap file created to see if everything looks fine.
+And that's it. Our snapshot have been updated and now we have the snapshot of the working component. You might want to take a look one more time at **Example.test.js.snap** file created to see if everything looks fine.
 ```javascript
 exports[`renders correctely 1`] = `
 <button
@@ -172,8 +172,8 @@ exports[`renders correctely 1`] = `
 ```
 Now that looks right!
 
-Just one **point of attention** when upgrading snapshots, a jest docs puts it:
->This will re-generate snapshot artifacts for all failing snapshot tests. If we had any additional failing snapshot tests due to an unintentional bug, we would need to fix the bug before re-generating snapshots to avoid recording snapshots of the buggy behavior.
+Just one **point of attention** when updating snapshots, a jest documentation puts it:
+>This [jest tests/ --updateSnapshot] will re-generate snapshot artifacts for all failing snapshot tests. **If we had any additional failing snapshot tests due to an unintentional bug, we would need to fix the bug before re-generating snapshots to avoid recording snapshots of the buggy behavior**.
 
 
 [Here](./tests/) in this boilerplate you can find a full example of a snapshot test and the respective .snap file created for our Example.js component.
