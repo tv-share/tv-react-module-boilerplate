@@ -182,7 +182,7 @@ These are all the information you should include in your docs:
 _short description_
 
 **Field** | **Type** | **Description**
---- | --- | ---
+--- | :---: | ---
 <field_name> | <field_type> | <short_description>
 
 Note that _Description_ is required only for non-trivial props, expect for required fields. Required field must always come at least with a _required_ flag in the description. Also, the list must be alphabetically ordered with required fields first.
@@ -194,7 +194,7 @@ Here is a example from the Example component in this boilerplate:
 _A simple example button._
 
 **Field** | **Type** | **Description**
---- | --- | ---
-label | string | required
+--- | :---: | ---
+label | string | (required)
 className | string | 
 onClick | func | Function fired when button is clicked.(I know this is trivial, but it's for the sake of the example)
