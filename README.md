@@ -1,18 +1,18 @@
 # tv-react-module-boilerplate
 
 * [How this repo works](#how-this-repo-works)
-* [Development - Existing Module](#development---existing-module)
+* [Development - Existing Module](#component-development)
     * [Guidelines]()
     * [Testing]()
     * [Docs]()
-* [Development - New Module](#development)
+* [Development - New Module](#module-development)
 
 ## How this repo works
 This is a boilerplate project for building React modules and publishing to [npmjs](https://www.npmjs.com).
 
 This boilerplate comes with a develop environment set up with [parceljs](https://parceljs.org/) for fast development and testing.
 
-Here you can also find the testing and documentation guidelines for building modules.
+Here you can find instructions and guidelines for building components for existing modules or to create your new module from scratch.
 
 To start building your module just follow these steps:
 
@@ -33,7 +33,7 @@ npm run dev
 
 All modules should follow the following the module development guidelines
 
-## Development - Existing Module
+## Component Development
 The project has the following structure:
 
 ```bash
@@ -47,3 +47,5 @@ The project has the following structure:
 The React classes go in the **lib/** directory and the stylus in the **style/**, allways following the file name pattern. All React class must also be exported in **src/index.js**.
 
 Also, for usability test, you can edit the **dev/workbench.js** file to pass props to your component and test its behavior.
+
+## Module Development
