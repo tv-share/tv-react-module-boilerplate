@@ -48,7 +48,7 @@ Also, for  easier development and usability test, you can edit the **dev/workben
 Remember that all coding must be done following theVelops' [coding guidelines]() present in out handbook.
 
 ### Tests
-**All new components must come with a test suite to test its main functionalities.**
+All new components must come with a test suite to test its main functionalities.
 
 The testing library we will be using will be [jest](https://facebook.github.io/jest/) and all components must come with at least a [snapshot test](https://facebook.github.io/jest/docs/en/snapshot-testing.html). If you added functions or controllers to handle you component behavior, each of these functions 
 must come with the respective unit test.
@@ -65,6 +65,8 @@ npm test
 # run test updating the snapshots
 npm run test:update
 ```
+
+**Always test your code before creating a pull request. Pull requests without tests or with failing tests will not be merged.**
 
 #### jest TL;DR
 When running a snapshot test, the first time you run it, jest will create a .snap file in the **tests/\_\_snapshots\_\_** directory that represents the snapshot of that component. It's yout job as a developer to evaluate if the snapshot created makes sense. 
@@ -176,8 +178,6 @@ Just one **point of attention** when updating snapshots, a jest documentation pu
 >This _[jest tests/ --updateSnapshot]_ will re-generate snapshot artifacts for all failing snapshot tests. **If we had any additional failing snapshot tests due to an unintentional bug, we would need to fix the bug before re-generating snapshots to avoid recording snapshots of the buggy behavior**.
 
 
-[Here](./tests/) in this boilerplate you can find a full example of a snapshot test and the respective .snap file created for our Example.js component.
-
-Always test your code before creating a pull request. Pull requests without tests or with failing tests will not be merged.
+[Here](./tests/) in this boilerplate you can find the full example of the snapshot test used in this guide.
 
 ## Module Development
