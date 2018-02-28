@@ -195,6 +195,6 @@ _A simple example button._
 
 **Field** | **Type** | **Description**
 --- | :---: | ---
-label | string | (required)
-className | string or node | 
+label | string or node | (required)
+className | string | 
 onClick | func | An example description for a non-trivial prop
