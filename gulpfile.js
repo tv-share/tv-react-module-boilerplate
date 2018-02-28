@@ -16,19 +16,7 @@ gulp.task('build', ['prebuild'], () => {
     gulp.start(['js', 'css']);
 });
 
-gulp.task('watch', () => {
-    gulp.watch('src/**/*.styl', ['css']);
-});
-
-gulp.task('watch:fix', () => {
-    gulp.watch('src/**/*.*', ['eslint', 'css']);
-});
-
 // Tasks
-gulp.task('parcel', (cb) => {
-
-});
-
 gulp.task('eslint', (cb) => {
     const tasks = [
         gulp.src('src/**/*.js'),

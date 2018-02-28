@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp watch",
+    "dev": "parcel dev/index.html",
     "dev:fix": "gulp watch:fix",
     "build": "gulp build"
   },
