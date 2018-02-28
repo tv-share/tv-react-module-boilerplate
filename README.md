@@ -1,7 +1,7 @@
 # tv-react-module-boilerplate
 
 * [How this repo works](#how-this-repo-works)
-* [Development - Existing Module](#development)
+* [Development - Existing Module](#Development - Existing Module)
     * [Guidelines]()
     * [Testing]()
     * [Docs]()
