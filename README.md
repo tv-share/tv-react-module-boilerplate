@@ -2,9 +2,9 @@
 
 * [How this repo works](#how-this-repo-works)
 * [Component Development](#component-development)
-    * [Guidelines]()
-    * [Testing]()
-    * [Docs]()
+    * [Guidelines](#guidelines)
+    * [Tests](#testing)
+    * [Docs](#docs)
 * [Module Development](#module-development)
 
 ## How this repo works
@@ -34,7 +34,22 @@ npm run dev
 All modules should follow the following the module development guidelines
 
 ## Component Development
-The project has the following structure:
+To start building new components or component improvements for a existing module follow these steps:
+
+```bash
+# clone the repo you will be working on
+git clone https://github.com/tv-share/<module_name>
+cd <module_name>
+
+# install dependencies
+npm install -g parcel-bundler
+npm install
+
+# start dev server
+npm run dev
+```
+
+All the coding will be done in the src directory, which has the following structure:
 
 ```bash
 # | src
@@ -44,8 +59,34 @@ The project has the following structure:
 #       example.styl
 #   index.js
 ```
-The React classes go in the **lib/** directory and the stylus in the **style/**, allways following the file name pattern. All React class must also be exported in **src/index.js**.
+The React classes go in the **lib/** directory and the stylus in the **style/**, allways following the file name pattern. Also don't forget to export you react classes in **src/index.js** and you stylus classes in **src/styles/_index.styl**.
 
-Also, for usability test, you can edit the **dev/workbench.js** file to pass props to your component and test its behavior.
+Also, for  easier development and usability test, you can edit the **dev/workbench.js** file to render you component and work with its props.
+
+### Guidelines
+Remember that all coding must be done following theVelops' [coding guidelines]() present in out handbook.
+
+### Tests
+**All new components must come with a test suite to test its main functionalities.**
+
+The testing library we will be using will be [jest](https://facebook.github.io/jest/) and all components must come with at least a [snapshot test](https://facebook.github.io/jest/docs/en/snapshot-testing.html). If you added functions or controllers to handle you component behavior, each of these functions 
+must come with the respective unit test.
+
+[Here]() in this boilerplate you can find an example of a snapshot test for our Example.js component.
+
+To run the tests:
+
+```bash
+# install dependencies (if not installed already)
+npm install
+
+# run test suite
+npm run test
+
+# run test updating the snapshots
+npm run test:update
+```
+
+Always test your code before creating a pull request. Pull requests with failing tests will not be merged.
 
 ## Module Development
