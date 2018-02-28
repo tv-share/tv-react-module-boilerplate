@@ -3,7 +3,7 @@
 * [How this repo works](#how-this-repo-works)
 * [Component Development](./docs/Component.md)
     * [Guidelines](./docs/Component.md#guidelines)
-    * [Tests](./docs/Component.md#testing)
+    * [Tests](./docs/Component.md#tests)
     * [Docs](./docs/Component.md#docs)
 * [Module Development](./docs/Module.md)
 
