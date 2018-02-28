@@ -1,11 +1,11 @@
 # tv-react-module-boilerplate
 
 * [How this repo works](#how-this-repo-works)
-* [Development - Existing Module](#component-development)
+* [Component Development](#component-development)
     * [Guidelines]()
     * [Testing]()
     * [Docs]()
-* [Development - New Module](#module-development)
+* [Module Development](#module-development)
 
 ## How this repo works
 This is a boilerplate project for building React modules and publishing to [npmjs](https://www.npmjs.com).
