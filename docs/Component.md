@@ -195,7 +195,6 @@ _A simple example button._
 
 **Field** | **Type** | **Description**
 --- | --- | ---
-<field_name> | <field_type> | <short_description>
 label | string | required
 className | string | 
 onClick | func | Function fired when button is clicked.(I know this is trivial, but it's for the sake of the example)
