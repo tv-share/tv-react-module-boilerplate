@@ -2,9 +2,9 @@
 
 exports[`renders correctely 1`] = `
 <button
-  className="example example-btn"
+  className="example my-class-name"
   onClick={[Function]}
 >
-  Example
+  Label
 </button>
 `;

@@ -7,8 +7,8 @@ const emptyFn = () => {};
 it('renders correctely', () => {
     const component = renderer.create(
         <Example
-            label="Example"
-            className="example-btn"
+            label="Label"
+            className="my-class-name"
             onClick={emptyFn}
         />
     );
