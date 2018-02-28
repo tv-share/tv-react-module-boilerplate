@@ -197,4 +197,4 @@ _A simple example button._
 --- | :---: | ---
 label | string | (required)
 className | string | 
-onClick | func | Function fired when button is clicked.(I know this is trivial, but it's for the sake of the example)
+onClick | func | An example description for a non-trivial prop
