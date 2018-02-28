@@ -176,11 +176,13 @@ All documentation must be written in the README.md file of the module, under the
 
 These are all the information you should include in your docs:
 
+
 - Component Name
-__short description__
+
+_short description_
 
 **Field** | **Type** | **Description**
 --- | --- | ---
-field_name | field_type | (optional) short_description
+<field_name> | <field_type> | <short_description>
 
 
