@@ -170,3 +170,16 @@ Just one **point of attention** when updating snapshots, a jest documentation pu
 [Here](./tests/) in this boilerplate you can find the full example of the snapshot test used in this guide.
 
 ## Docs
+All new components must come with a well written documentation on how to use its features.
+
+All documentation must be written in the README.md file of the module, under the section **Docs**. You should use the [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) pattern. Also, don't forget to include you component in the module's README.md index.
+
+These are all the information you should include in your docs:
+
+- Component Name
+__short description__
+**Field** | **Type** | **Description**
+--- | --- | ----
+field_name | field_type | (optional) short_description
+
+
