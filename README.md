@@ -10,6 +10,6 @@
 ## How this repo works
 This is a boilerplate project for building React modules and publishing to [npmjs](https://www.npmjs.com).
 
-This boilerplate comes with a develop environment set up with [parceljs](https://parceljs.org/) for fast development and testing.
+This boilerplate comes with a dev server environment set up with [parceljs](https://parceljs.org/) for fast development and testing.
 
-Here you can find instructions and guidelines for building components for existing modules or to create your new module from scratch.
+Here you can find instructions and guidelines for building components for [existing modules](./docs/Component) or to create your [new module](./docs/Module) from scratch.
