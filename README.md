@@ -1,12 +1,18 @@
 # tv-react-module-boilerplate
 
 * [How this repo works](#how-this-repo-works)
-* [Development](#development)
+* [Development - Existing Module](#development)
+    * [Guidelines]()
+    * [Testing]()
+    * [Docs]()
+* [Development - New Module](#development)
 
 ## How this repo works
 This is a boilerplate project for building React modules and publishing to [npmjs](https://www.npmjs.com).
 
 This boilerplate comes with a develop environment set up with [parceljs](https://parceljs.org/) for fast development and testing.
+
+Here you can also find the testing and documentation guidelines for building modules.
 
 To start building your module just follow these steps:
 
