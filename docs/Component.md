@@ -45,8 +45,8 @@ must come with the respective unit test.
 To run the tests:
 
 ```bash
-# install dependencies (if not installed already)
-npm install
+# install dependencies
+npm install --save-dev jest babel-jest babel-preset-env babel-preset-react react-test-renderer
 
 # run test suite
 npm test
