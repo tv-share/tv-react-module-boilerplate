@@ -79,7 +79,7 @@ it('renders correctely', () => {
         <Example
             label="Example"
             className="example-btn"
-            onClick={() => {})}
+            onClick={() => {}}
         />
     );
     
